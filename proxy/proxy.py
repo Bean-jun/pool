@@ -112,8 +112,7 @@ class GetProxiesPool(object):
         return self.full_ip
 
     def main(self):
-        ip_pool = GetProxiesPool()
-        proxy= ip_pool.run()
+        proxy= self.run()
         for i in proxy:
             print(i)
             self.test_ip(i)
